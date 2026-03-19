@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<style>
+body { font-family: sans-serif; background: #f8f8f7; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+.card { background: white; padding: 40px; border-radius: 12px; border: 1px solid #e8e8e6; text-align: center; max-width: 400px; width: 100%; }
+h1 { font-size: 24px; margin-bottom: 8px; }
+p { color: #888884; margin-bottom: 24px; }
+.btn { display: inline-block; padding: 10px 24px; background: #1a1a1a; color: white; border-radius: 8px; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="card">
+<h1>Welcome, {{ user.first_name }}!</h1>
+<p>You are successfully logged in.</p>
+<a href="/logout/" class="btn">Log out</a>
+</div>
+</body>
+</html>
